@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="slick/slick.css">
         <link rel="stylesheet" href="slick/slick-theme.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-addon.css">
         <link rel="stylesheet" href="css/stitches-1.3.5.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -25,64 +26,59 @@
         <![endif]-->
 
         <header id="header">
-            <div class="main-container">
-                <div class="header__lang mr-auto">
-                    <a href="#" class="header__lang-choice header__lang-choice-1">中 &nbsp;/ </a>
-                    <a href="#" class="header__lang-choice header__lang-choice-2">ENG</a>
-                </div>
-                <a href="index.html" class="logo"></a>
-                <nav class="navbar navbar-expand-lg header__nav navbar-light">
-                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-                            data-target="#headerNavCollapse"
-                            aria-controls="headerNavCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <div class="header__inner">
+                <div class="container d-flex flex-column">
+                    <div id="header-mob__btn">
+                        <span></span><span></span><span></span>
+                    </div>
 
-                    <div class="collapse navbar-collapse header__navbar-collapse" id="headerNavCollapse">
-                        <ul class="navbar-nav ml-auto header__nav-navbar">
-                            <li class="nav-item active header__nav-item">
-                                <a class="nav-link header__nav-link" href="#">About Us <span class="sr-only">(current)
-                                </span></a>
+                    <div class="header__lang ml-auto">
+                        <a href="#" class="header__lang-choice header__lang-choice-1">中 </a>
+                        <a href="#" class="header__lang-choice header__lang-choice-2">ENG</a>
+                    </div>
+                    <a href="index.html" class="logo"></a>
+                    <nav class="header__nav ml-auto">
+                        <ul class="header__nav-list d-flex">
+                            <li class="active header__nav-item">
+                                <a class="header__nav-link" href="#">About Us</a>
                             </li>
-                            <li class="nav-item header__nav-item">
-                                <a class="nav-link header__nav-link" href="#">Business Strategy</a>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Business Strategy</a>
                             </li>
-                            <li class="nav-item header__nav-item">
-                                <a class="nav-link header__nav-link" href="#">Group Business</a>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Group Business</a>
                             </li>
-                            <li class="nav-item header__nav-item">
-                                <a class="nav-link header__nav-link" href="#">Investor Relations</a>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Investor Relations</a>
                             </li>
-                            <li class="nav-item header__nav-item">
-                                <a class="nav-link header__nav-link" href="#">Careers</a>
+                            <li class="header__nav-item">
+                                <a class="header__nav-link" href="#">Careers</a>
                             </li>
-                            <li class="nav-item header__nav-item">
-                                <a class="nav-link header__nav-link" href="#">Contact</a>
+                            <li class="header__nav-item">
+                                <a class=" header__nav-link" href="#">Contact</a>
                             </li>
                         </ul>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </header>
         <main class="homepage__main main">
-            <div class="container-fluid">
-                <div class="homepage__slider slick__slider">
-                    <div class="slick__item">
-                        <img src="img/homepage/slider-1.png" alt="Oasis banner">
-                    </div>
-                    <div class="slick__item">
-                        <img src="img/homepage/slider-1.png" alt="Oasis banner">
-                    </div>
-                    <div class="slick__item">
-                        <img src="img/homepage/slider-1.png" alt="Oasis banner">
-                    </div>
-                    <div class="slick__item">
-                        <img src="img/homepage/slider-1.png" alt="Oasis banner">
-                    </div>
+            <div class="homepage__slider slick__slider">
+                <div class="slick__item">
+                    <img src="img/homepage/slider-1.png" alt="Oasis banner">
+                </div>
+                <div class="slick__item">
+                    <img src="img/homepage/slider-1.png" alt="Oasis banner">
+                </div>
+                <div class="slick__item">
+                    <img src="img/homepage/slider-1.png" alt="Oasis banner">
+                </div>
+                <div class="slick__item">
+                    <img src="img/homepage/slider-1.png" alt="Oasis banner">
                 </div>
             </div>
             <div class="homepage-info">
-                <div class="main-container">
+                <div class="container">
                     <div class="homepage-info__heading">
                         <h1 class="h1">
                             奧思集團具穩固根基的領先美容企業
@@ -95,80 +91,158 @@
                             特許品牌產品組合。作爲行業的領先者，本集團致力成為大中華地區的翹楚。
                         </h2>
                     </div>
-                    <div class="homepage-info__buttons d-flex justify-content-between">
-                        <div class="homepage-info__btn">
-                            <div class="homepage-info__icon sprite sprite-info-blue-bg"></div>
-                            <span class="homepage-info__btn-text">關於我們</span>
-                        </div>
-                        <div class="homepage-info__btn">
-                            <div class="homepage-info__icon sprite sprite-flag-blue-bg"></div>
-                            <span class="homepage-info__btn-text">里程碑</span>
-                        </div>
-                        <div class="homepage-info__btn">
-                            <div class="homepage-info__icon sprite sprite-trio-blue-bg"></div>
-                            <span class="homepage-info__btn-text">管理層</span>
-                        </div>
-                        <div class="homepage-info__btn">
-                            <div class="homepage-info__icon sprite sprite-handshake-blue-bg"></div>
-                            <span class="homepage-info__btn-text">投資者關係</span>
+                </div>
+                <div class="homepage-info__buttons">
+                    <div class="container">
+                        <div class="row">
+                            <div class="homepage-info__btn col-6 col-sm-3">
+                                <a href="#" class="homepage-info__icon homepage-info__icon-1">
+                                    <span class="homepage-info__btn-text">關於我們</span>
+                                </a>
+                            </div>
+                            <div class="homepage-info__btn col-6 col-sm-3">
+                                <a href="#" class="homepage-info__icon homepage-info__icon-2">
+                                    <span class="homepage-info__btn-text">里程碑</span>
+                                </a>
+                            </div>
+                            <div class="homepage-info__btn col-6 col-sm-3">
+                                <a href="#" class="homepage-info__icon homepage-info__icon-3">
+                                    <span class="homepage-info__btn-text">管理層</span>
+                                </a>
+                            </div>
+                            <div class="homepage-info__btn col-6 col-sm-3">
+                                <a href="#" class="homepage-info__icon homepage-info__icon-4">
+                                    <span class="homepage-info__btn-text">投資者關係</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="homepage-banner__wrap">
-                <div class="container-fluid">
-                    <div class="homepage-banner"></div>
+                <div class="homepage-banner homepage-banner-1">
+                    <img src="img/homepage/banner-1.png" alt="">
                 </div>
             </div>
             <section class="homepage-business">
                 <div class="h1 heading__highlight-center text-center">集團業務</div>
-                <div class="main-container">
                     <div class="homepage-business__list">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="homepage-business__item col-12 col-sm-6">
+                        <div class="container">
+                            <div class="row padding-lr-80">
+                                <div class="homepage-business__item col-12 col-md-6">
                                     <div class="homepage-business__img">
                                         <img src="img/homepage/business-1.png" alt="Oasis group building" title="Oasis">
                                     </div>
                                     <div class="homepage-business__content-wrap d-flex">
-                                        <div class="homepage-business__icon sprite sprite-home"></div>
+                                        <div class="homepage-business__icon homepage-business__icon-home"></div>
                                         <div class="homepage-business__content">
                                             <div class="h3 homepage-business__subtitle">美容服務</div>
-                                            <p class="homepage-business__text">
+                                            <p class="homepage-business__text section__content">
                                                 整個奧思品牌系列提供市場獨有的全面服務及產品，提供全方位的綜合、專業及醫學美容服務。
                                             </p>
-                                            <div class="btn-wrap">
+                                            <div class="homepage-business__btn-wrap">
                                                 <a href="#" class="button homepage-business__button">更多詳情</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="homepage-business__item col-12 col-sm-6">
+                                <div class="homepage-business__item col-12 col-md-6">
                                     <div class="homepage-business__img">
                                         <img src="img/homepage/business-2.png" alt="Oasis group building" title="Oasis">
                                     </div>
                                     <div class="homepage-business__content-wrap d-flex">
-                                        <div class="homepage-business__icon sprite sprite-globus"></div>
+                                        <div class="homepage-business__icon homepage-business__icon-globus"></div>
                                         <div class="homepage-business__content">
                                             <div class="h3 homepage-business__subtitle">零售產品</div>
-                                            <p class="homepage-business__text">
+                                            <p class="homepage-business__text section__content">
                                                 集團自營及分銷代理世界知名優質護膚品牌產品
                                             </p>
-                                            <div class="btn-wrap">
+                                            <div class="homepage-business__btn-wrap">
                                                 <a href="#" class="button homepage-business__button">更多詳情</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <div class="homepage-banner__wrap">
+                <div class="homepage-banner homepage-banner-2">
+                    <img src="img/homepage/banner-2.png" alt="">
+                </div>
+            </div>
+            <section class="homepage-career">
+                <div class="homepage-career__inner">
+                    <div class="container">
+                        <div class="row padding-lr-80">
+                            <div class="col-12 col-md-2">
+                                <div class="section__heading section__heading--blue">人才招聘</div>
+                            </div>
 
+                            <div class="col-12 col-md-5 homepage-career__content-wrap">
+                                <p class="section__content">
+                                    奧思集團一向重視員工，因為人才是我們的重要資產。我們誠意邀請具創意、有熱誠及主動的你，加入我們的大家庭。
+                                </p>
+                                <p class="section__content">
+                                    我們提供完善的事業發展及培訓課程，全面發展及培育員工的個人及專業能力。
+                                </p>
+                                <div class="homepage-career__btn-wrap">
+                                    <a href="#" class="button">更多詳情</a>
+                                </div>
+                            </div>
 
+                            <div class="col-12 col-md-5 section-logos">
+                                <div class="group__logo homepage-career__group-logo sprite sprite-oasis-sm"></div>
+                                <div class="homepage-career__separator"></div>
+                                <div class="section-logos__oasis d-flex justify-content-between">
+                                    <div class="section__logo-small homme__logo"></div>
+                                    <div class="section__logo-small medical__logo"></div>
+                                    <div class="section__logo-small spa__logo"></div>
+                                    <div class="section__logo-small beauty__logo"></div>
+                                    <div class="section__logo-small florist__logo"></div>
+                                </div>
+                                <div class="section-logos__small d-flex justify-content-between">
+                                    <div class="section__logo-small h2o__logo"></div>
+                                    <div class="section__logo-small glycel__logo"></div>
+                                    <div class="section__logo-small erno__logo"></div>
+                                    <div class="section__logo-small eurobeauty__logo"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         </main>
+        <footer id="footer">
+            <div class="container">
+                <div class="row padding-lr-80">
+                    <div class="col-12 col-md-2">
+                        <div class="section__heading section__heading--white">聯絡我們</div>
+                    </div>
+                    <div class="col-12 col-md-5 footer__address-wrap">
+                        <div class="footer__address-subheading">香港辦公室</div>
+                        <div class="footer__street"> 香港銅鑼灣告士打道280號世界貿易中心18樓 </div>
+                        <div class="footer__contact">
+                            corporate@wateroasis.com.hk <br>
+                            +852 2890 7428 <br>
+                            +852 3182 7777 (查詢熱線) <br>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 footer__address-wrap">
+                        <div class="footer__address-subheading">北京辦公室</div>
+                        <div class="footer__street">
+                            北京市西城區宣武門外大街6號莊勝 <br>
+                            廣場北辦公樓西翼4層3A12單元(郵編: 100052)
+                        </div>
+                        <div class="footer__contact">
+                            cs@wateroasis.com.cn <br>
+                            +86 10 6528 0192
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>

@@ -14,13 +14,15 @@
 .homepage-info__buttons{
   padding: 0 50px;
   margin-bottom: 80px;
+  //border: 1px solid red;
 }
 
 .homepage-info__btn{
   position: relative;
-  .square(220px);
   .border-radius(50%);
   .transition(0.3s all ease);
+
+  //border: 1px solid yellow;
   &:hover{
     -webkit-filter: hue-rotate(12deg);
     filter: hue-rotate(12deg);
@@ -28,7 +30,37 @@
 }
 
 .homepage-info__icon{
-  //.square(100%);
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
+.homepage-info__icon-1{
+  background: url("@{rootUrl}homepage/info-icon-1.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .square(220px);
+}
+
+.homepage-info__icon-2{
+  background: url("@{rootUrl}homepage/info-icon-2.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .square(220px);
+}
+
+.homepage-info__icon-3{
+  background: url("@{rootUrl}homepage/info-icon-3.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .square(220px);
+}
+
+.homepage-info__icon-4{
+  background: url("@{rootUrl}homepage/info-icon-4.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .square(220px);
 }
 
 .homepage-info__btn-text{
@@ -46,15 +78,14 @@
 //homepage banner
 
 .homepage-banner__wrap{
-  margin: 0 -15px;
-}
-.homepage-banner{
-  background: url('@{rootUrl}homepage/banner.png')no-repeat center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  .size(100%, 270px);
+  //margin: 0 -15px;
 }
 
+.homepage-banner{
+  img{
+    width: 100%;
+  }
+}
 
 //homepage business
 
@@ -66,7 +97,7 @@
 }
 
 .homepage-business__list{
-  margin: 0 -15px;
+
 }
 
 .homepage-business__item{
@@ -88,9 +119,25 @@
 .homepage-business__icon{
   min-width: 50px;
 }
+.homepage-business__icon-home{
+  background: url("@{rootUrl}general-icons/home.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(48px, 40px);
+}
+
+.homepage-business__icon-globus{
+  background: url("@{rootUrl}general-icons/globus.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(39px, 48px);
+}
 
 .homepage-business__content{
   padding-left: 25px;
+  min-height: 176px;
+  padding-bottom: 50px;
+  position: relative;
 }
 
 .homepage-business__subtitle{
@@ -100,5 +147,209 @@
 
 .homepage-business__text{
   margin-bottom: 40px;
+}
 
+.homepage-business__btn-wrap{
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+}
+//Homepage careers
+
+.homepage-career{
+  padding-top: 53px;
+  padding-bottom: 70px;
+}
+
+.homepage-career__inner{
+
+  .section__heading{
+
+  }
+}
+
+.homepage-career__content-wrap{
+  margin-bottom: 40px;
+  .section__content{
+    max-width: 92%;
+  }
+}
+
+.homepage-career__btn-wrap{
+  margin-top: 30px;
+}
+
+.section-logos{
+
+}
+
+.homepage-career__group-logo {
+  position: relative;
+  background: url("@{rootUrl}general-icons/oasis-sm.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(81px, 54px);
+}
+
+.homepage-career__separator{
+  height: 1px;
+  width: 100%;
+  background-color: @colorGrey;
+  margin: 20px 0;
+}
+
+.section-logos__oasis{
+
+}
+
+.section-logos__small{
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  .jc-space-between();
+}
+
+.section__logo-small{
+  //margin-right: 20px;
+}
+
+.homme__logo{
+  background: url("@{rootUrl}general-icons/oasis-homme.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  //.size(52px, 22px);
+  .size(71px, 30px);
+}
+
+.medical__logo{
+  background: url("@{rootUrl}general-icons/oasis-medical.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  //.size(73px, 23px);
+  .size(82px, 29px);
+}
+
+.spa__logo{
+  background: url("@{rootUrl}general-icons/oasis-spa.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  //.size(55px, 26px);
+  .size(62px, 35px);
+}
+
+.beauty__logo{
+  background: url("@{rootUrl}general-icons/oasis-beauty.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  //.size(69px, 30px);
+  .size(68px, 35px);
+}
+
+.florist__logo{
+  background: url("@{rootUrl}general-icons/oasis-florist.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  //.size(72px, 29px);
+  .size(79px, 37px);
+}
+
+.h2o__logo{
+  background: url("@{rootUrl}general-icons/h2o.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  //.size(45px, 25px);
+  .size(54px, 32px);
+}
+
+.glycel__logo{
+  background: url("@{rootUrl}general-icons/glycel.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  //.size(72px, 17px);
+  .size(78px, 24px);
+}
+
+.erno__logo{
+  background: url("@{rootUrl}general-icons/erno.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  //.size(37px, 28px);
+  .size(46px, 36px);
+}
+
+.eurobeauty__logo{
+  background: url("@{rootUrl}general-icons/eurobeauty.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  //.size(109px, 25px);
+  .size(120px, 32px);
+}
+
+
+@media  screen and (max-width: 1200px) {
+  .homepage-info__icon-1,
+  .homepage-info__icon-2,
+  .homepage-info__icon-3,
+  .homepage-info__icon-4{
+    .square(160px);
+    .homepage-info__btn-text{
+      bottom: 27px;
+    }
+  }
+}
+
+@media  screen and (max-width: 992px) {
+  .homepage-info__icon-1,
+  .homepage-info__icon-2,
+  .homepage-info__icon-3,
+  .homepage-info__icon-4{
+    .square(130px);
+  }
+  .homepage-info__btn-text{
+    font-size: 15px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .homepage-info__heading{
+    margin-bottom: 50px;
+  }
+  .homepage-info__buttons{
+    margin-bottom: 50px;
+  }
+  .homepage-info__icon-1,
+  .homepage-info__icon-2,
+  .homepage-info__icon-3,
+  .homepage-info__icon-4{
+    .square(100px);
+  }
+  .homepage-info__btn-text{
+    font-size: 12px;
+    bottom: 18px;
+  }
+
+
+  .homepage-business {
+    padding: 55px 0 20px;
+  }
+  .homepage-business__item{
+    margin-bottom: 40px;
+  }
+  .homepage-business__content{
+    min-height: auto;
+    padding-bottom: 0;
+  }
+  .homepage-business__text {
+    margin-bottom: 20px;
+  }
+  .homepage-business__btn-wrap {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@media  screen and (max-width: 580px) {
+  .homepage-info__btn{
+    margin-bottom: 25px;
+  }
 }

@@ -2,41 +2,17 @@
   height: 121px;
   padding-top: 16px;
   margin-bottom: 20px;
-  .header__nav-link {
-    //border: 1px solid yellow;
-    color: @textColor;
-    font-size: 15px;
-    padding: 8px 0;
-    .transition(0.3s all ease);
-  }
-  .header__nav-item {
-    &:hover,
-    &:focus,
-    &:active {
-      .header__nav-link {
-        color: @colorBlue;
-      }
-    }
-    &.active {
-      .header__nav-link {
-        color: @colorBlue;
-      }
-    }
-  }
-  .navbar-toggler{
-    outline: none;
-    opacity: 0.6;
-    .transition(0.3s all ease);
-    &:hover,
-    &:focus,
-    &:active{
-      opacity: 1;
-    }
+}
+
+.header__inner{
+  .container{
+    position: relative;
   }
 }
 
 .header__lang{
   text-align: right;
+  font-size: 14px;
 }
 
 .header__lang-choice{
@@ -55,6 +31,13 @@
 
 .header__lang-choice-1{
   margin-right: 9px;
+  &:after{
+    display: inline-block;
+    content: '/';
+    color: @textColor;
+    font-size: 15px;
+    margin-left: 9px;
+  }
 }
 
 .logo{
@@ -66,31 +49,164 @@
 }
 
 .header__nav{
-  //height: 45px;
-  padding-right: 0;
-}
-
-.header__navbar-collapse{
-  &.show{
-    .header__nav-navbar{
-      //text-align: center;
-    }
-    .header__nav-item{
-      //margin-left: 0;
-    }
-  }
-}
-
-.header__nav-navbar {
+  height: 45px;
+  .transition(0.3s all ease);
   //border: 1px solid red;
+}
+
+.header__nav-list{
+  padding-right: 0;
+  padding-left: 0;
+  //border: 1px solid green;
+  margin-bottom: 0;
+  height: 100%;
+  .ai-flex-center();
+  .transition(0.3s all ease);
 }
 
 .header__nav-item {
   //border: 1px solid green;
   margin-left: 45px;
   .transition(0.3s all ease);
+  display: inline-block;
+  list-style: none;
+  &:hover,
+  &:focus,
+  &:active {
+    .header__nav-link {
+      color: @colorBlue;
+    }
+  }
+  &.active {
+    .header__nav-link {
+      color: @colorBlue;
+    }
+  }
 }
 
+.header__nav-link {
+  //border: 1px solid yellow;
+  color: @textColor;
+  font-size: 15px;
+  padding: 8px 0;
+  text-decoration: none;
+  .transition(0.3s all ease);
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+}
 
+#header-mob__btn{
+  cursor: pointer;
+  position: absolute;
+  top: 38px;
+  right: 15px;
+  z-index: 51;
+  display: none;
+  span{
+    width: 35px;
+    height: 2px;
+    background-color:  lighten(@textColor, 20%);
+    display: block;
+    margin: 8px auto;
+    .transition(0.3s all ease);
+  }
+  &:hover,
+  &:focus{
+    span{
+      .scale(1.1);
+    }
+  }
+  &.active{
 
+    span{
+      &:nth-child(2){
+        opacity: 0;
+      }
+      &:nth-child(1){
+        -webkit-transform: translateY(7px) rotate(45deg);
+        -ms-transform: translateY(7px) rotate(45deg);
+        -o-transform: translateY(7px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
+      }
+      &:nth-child(3){
+        -webkit-transform: translateY(-13px) rotate(-45deg);
+        -ms-transform: translateY(-13px) rotate(-45deg);
+        -o-transform: translateY(-13px) rotate(-45deg);
+        transform: translateY(-13px) rotate(-45deg);
+      }
+    }
+  }
+}
 
+@media  screen and (max-width: 1200px) {
+  .header__nav-item{
+    margin-left: 25px;
+  }
+}
+
+@media  screen and (max-width: 992px) {
+  #header {
+    height: 90px;
+    margin-bottom: 16px;
+  }
+  #header-mob__btn{
+    display: block;
+  }
+  .header__nav{
+    display: none;
+    .translate(-100%, 0);
+    &.header__nav-open{
+      display: block;
+      position: fixed;
+      z-index: 50;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(238, 238, 238, 0.94);
+      padding: 72px 0;
+      .translate(0, 0);
+      .header__nav-list{
+        width: 100%;
+        .flex-direction-col();
+        .jc-space-between();
+        .translate(0, 0);
+      }
+    }
+  }
+
+  .header__nav-list{
+    .translate(-100%, 0);
+  }
+}
+
+@media  screen and (max-width: 768px) {
+
+}
+
+@media  screen and (max-width: 580px) {
+  #header {
+    height: 79px;
+  }
+  .logo{
+    .size(299px, 42px);
+  }
+  #header-mob__btn{
+    top: 29px;
+  }
+}
+
+@media  screen and (max-width: 420px) {
+  .logo {
+    width: 238px;
+    height: 43px;
+  }
+  #header-mob__btn{
+    top: 21px;
+  }
+}

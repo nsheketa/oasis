@@ -1,9 +1,24 @@
+.padding-lr-50{
+  padding: 0 50px;
+}
+
+.padding-lr-80{
+  padding: 0 80px;
+}
+
 .main{
   max-width: 100%;
   overflow: hidden;
 }
 
+body{
+  &.no-scroll{
+    overflow: hidden;
+  }
+}
+
 .button{
+  display: inline-block;
   font-size: 14px;
   color: @colorBlue;
   text-align: center;
@@ -17,4 +32,39 @@
     background-color: #eee;
     text-decoration: none;
   }
+}
+
+@media screen and (min-width: 1300px) {
+  .container {
+    max-width: 1280px !important;
+  }
+}
+
+@media  screen and (max-width: 1100px) {
+  .padding-lr-50{
+    padding: 0 25px;
+  }
+
+  .padding-lr-80{
+    padding: 0 40px;
+  }
+}
+
+@media  screen and (max-width: 992px) {
+  .padding-lr-50{
+    padding: 0;
+  }
+
+  .padding-lr-80{
+    padding: 0;
+  }
+
+  .button{
+    font-size: 12px;
+    padding: 12px 45px;
+  }
+}
+
+@media  screen and (max-width: 992px) {
+
 }
