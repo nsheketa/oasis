@@ -1,0 +1,36 @@
+.corporate-details{
+
+}
+.corporate-details__item{
+  height: 380px;
+  position: relative;
+  margin-bottom: 70px;
+  &:after{
+    display: block;
+    content: "";
+    margin: 35px auto;
+    width: 93%;
+    height: 1px;
+    background-color: #4d4d4d;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.corporate-details__img{
+  .size(100%, 190px);
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 25px;
+}
+
+@media  screen and (max-width: 580px) {
+  .corporate-details__item {
+    height: auto;
+    margin-bottom: 50px;
+  }
+}

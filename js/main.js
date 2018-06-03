@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     //mob menu
-    $("#header-mob__btn").click(function(){
+    $("#header-mob__btn").click(function () {
         $(this).toggleClass("active");
         $(".header__nav").toggleClass('header__nav-open');
         $("body").toggleClass('no-scroll');
@@ -14,10 +14,20 @@ $(document).ready(function() {
     });
 
     //slick slider
-    $('.slick__slider').slick({
+    $('.homepage__slider').slick({
         arrows: false,
         dots: true,
         fade: true
+    });
+    $('.corporate__slider').slick({
+        arrows: true,
+        dots: true,
+        // fade: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        centerMode: true,
+        variableWidth: true
     });
 
 
