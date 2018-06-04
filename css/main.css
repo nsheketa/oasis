@@ -202,6 +202,9 @@ body.no-scroll {
   background-color: #eee;
   text-decoration: none;
 }
+.banner__wrap img {
+  width: 100%;
+}
 @media screen and (min-width: 1300px) {
   .container {
     max-width: 1280px !important;
@@ -248,11 +251,13 @@ h1,
 .h1 {
   font-size: 21px;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 h2,
 .h2 {
   font-size: 15px;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 h3,
 .h3 {
@@ -732,7 +737,7 @@ h3,
     display: none;
   }
 }
-.submenu-list {
+.category-list {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -749,11 +754,11 @@ h3,
   margin: 0;
   padding: 0;
 }
-.submenu-item {
+.category-item {
   list-style: none;
   margin: 0px 65px 0px 65px;
 }
-.submenu-link {
+.category-link {
   font-size: 14px;
   color: #0090d2;
   text-decoration: none;
@@ -762,13 +767,13 @@ h3,
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-.submenu-link:hover,
-.submenu-link:active,
-.submenu-link:focus {
+.category-link:hover,
+.category-link:active,
+.category-link:focus {
   text-decoration: none;
   color: #0090d2;
 }
-.submenu-icon {
+.category-icon {
   display: inline-block;
   margin-right: 15px;
   vertical-align: bottom;
@@ -776,21 +781,21 @@ h3,
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
 }
-.submenu-icon-1 {
+.category-icon-1 {
   background: url("images/about-us/icon-1.png") no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
   width: 48px;
   height: 48px;
 }
-.submenu-icon-2 {
+.category-icon-2 {
   background: url("images/about-us/icon-2.png") no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
   width: 48px;
   height: 48px;
 }
-.submenu-icon-3 {
+.category-icon-3 {
   background: url("images/about-us/icon-3.png") no-repeat center;
   -webkit-background-size: contain;
   background-size: contain;
@@ -798,76 +803,76 @@ h3,
   height: 48px;
   margin-top: 3px;
 }
-.submenu-link__content {
+.category-link__content {
   display: inline-block;
   vertical-align: bottom;
 }
-.submenu-link__content-3 {
+.category-link__content-3 {
   margin-bottom: 3px;
 }
 @media screen and (max-width: 992px) {
-  .submenu-item {
+  .category-item {
     margin: 0px 30px 0px 30px;
   }
 }
 @media screen and (max-width: 768px) {
-  .submenu-link {
+  .category-link {
     font-size: 12px;
   }
-  .submenu-icon-1 {
+  .category-icon-1 {
     width: 40px;
     height: 40px;
   }
-  .submenu-icon-2 {
+  .category-icon-2 {
     width: 40px;
     height: 40px;
   }
-  .submenu-icon-3 {
+  .category-icon-3 {
     width: 71px;
     height: 40px;
     margin-top: 5px;
   }
 }
 @media screen and (max-width: 580px) {
-  .submenu-list {
+  .category-list {
     padding: 0 10px;
   }
-  .submenu-item {
+  .category-item {
     margin: 0px 15px 0px 15px;
   }
-  .submenu-icon {
+  .category-icon {
     margin-right: 7px;
   }
-  .submenu-icon-1 {
+  .category-icon-1 {
     width: 36px;
     height: 36px;
   }
-  .submenu-icon-2 {
+  .category-icon-2 {
     width: 36px;
     height: 36px;
   }
-  .submenu-icon-3 {
+  .category-icon-3 {
     width: 61px;
     height: 36px;
     margin-top: 5px;
   }
 }
 @media screen and (max-width: 580px) {
-  .submenu-link {
+  .category-link {
     text-align: center;
   }
-  .submenu-icon {
+  .category-icon {
     margin-right: 0;
     display: block;
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
   }
-  .submenu-icon-3 {
+  .category-icon-3 {
     margin-bottom: 0;
     margin-top: 6px;
   }
-  .submenu-link__content-3 {
+  .category-link__content-3 {
     margin-bottom: 1px;
   }
 }
@@ -1186,7 +1191,7 @@ h3,
   height: auto;
 }
 @media screen and (max-width: 992px) {
-  .submenu-item {
+  .category-item {
     margin: 0px 30px 0px 30px;
   }
 }
@@ -1334,6 +1339,131 @@ h3,
   .management__list {
     padding: 0 15px;
   }
+}
+.strategy {
+  padding: 66px 0;
+}
+.strategy-info__section-heading {
+  color: #0090d2;
+  text-align: center;
+}
+.strategy-info__item {
+  height: 565px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.strategy-info__item-title {
+  height: 65px;
+  background-color: #0090d2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.strategy-info__title-icon {
+  display: inline-block;
+  margin: 0 15px;
+}
+.strategy-info__title-icon-1 {
+  background: url("images/general-icons/home-white.svg") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 47px;
+  height: 39px;
+}
+.strategy-info__title-icon-2 {
+  background: url("images/general-icons/globus-white.svg") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 39px;
+  height: 47px;
+}
+.strategy-info__title-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 15px;
+}
+.strategy-info__item-body {
+  border: 1px solid #d3d3d3;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  height: 500px;
+  padding: 30px 0;
+}
+.strategy-info__item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.strategy-info__item-logo {
+  margin: 0 15px;
+}
+.strategy__logo-oasis {
+  background: url("images/strategy/oasis.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 245px;
+  height: 89px;
+}
+.strategy__logo-medical {
+  background: url("images/strategy/medical.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 99px;
+  height: 17px;
+}
+.strategy__logo-spa {
+  background: url("images/strategy/spa.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 40px;
+  height: 25px;
+}
+.strategy__logo-beauty {
+  background: url("images/strategy/beauty.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 67px;
+  height: 38px;
+}
+.strategy__logo-homme {
+  background: url("images/strategy/homme.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 72px;
+  height: 22px;
+}
+.strategy__logo-health {
+  background: url("images/strategy/health.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 67px;
+  height: 22px;
+}
+.strategy__logo-nail {
+  background: url("images/strategy/nail.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 33px;
+  height: 21px;
+}
+.strategy__logo-florist {
+  background: url("images/strategy/florist.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 113px;
+  height: 56px;
+}
+.strategy__logo-glycel-sm {
+  background: url("images/strategy/glycel-sm.png") no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 211px;
+  height: 56px;
 }
 #footer {
   padding: 60px 0;
