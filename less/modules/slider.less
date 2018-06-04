@@ -85,12 +85,47 @@
   margin-bottom: 100px !important;
   .slick__item{
     padding: 0 20px;
+    position: relative;
   }
 }
+
+.corporate__slider-content-wrap{
+  position: absolute;
+  //left: 59%;
+  right: 40px;
+  bottom: 70px;
+  line-height: 1.5;
+  max-width: 395px;
+  z-index: 10;
+}
+
+.corporate__slider-content-title{
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.corporate__slider-content{
+  font-weight: 300;
+  font-size: 18px;
+}
+
 @media  screen and (max-width: 992px) {
   .corporate__slider .slick__item {
     max-width: 100vw;
     padding: 0 10px;
+  }
+  .corporate__slider-content-wrap{
+    max-width: 342px;
+    //left: 53%;
+    right: 35px;
+    bottom: 47px;
+  }
+  .corporate__slider-content-title{
+    font-size: 40px;
+  }
+  .corporate__slider-content{
+    font-size: 15px;
   }
 }
 
@@ -99,7 +134,7 @@
     margin-bottom: 70px !important;
   }
   .corporate__slider .slick__item {
-    //max-width: 100vw;
+    overflow: hidden;
   }
   .slick__slider{
     .slick-arrow{
@@ -113,5 +148,54 @@
         left: 15px;
       }
     }
+  }
+  .corporate__slider-content-wrap {
+    max-width: 234px;
+    //left: 53%;
+    right: 25px;
+    bottom: 32px;
+    overflow: hidden;
+  }
+  .corporate__slider-content-title{
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .corporate__slider-content{
+    font-size: 12px;
+  }
+}
+
+@media  screen and (max-width: 580px) {
+  .corporate__slider-content-wrap {
+    max-width: 209px;
+    bottom: 10px;
+  }
+  .corporate__slider-content-title{
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .corporate__slider-content{
+    font-size: 12px;
+  }
+}
+
+@media  screen and (max-width: 480px) {
+  .corporate__slider-content-wrap {
+    max-width: 201px;
+    bottom: 10px;
+    right: 5px;
+  }
+  .corporate__slider-content-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .corporate__slider-content {
+    font-size: 11px;
+  }
+}
+
+@media  screen and (max-width: 420px) {
+  .corporate__slider-content-wrap {
+    display: none;
   }
 }

@@ -1,0 +1,110 @@
+.management__main{
+
+}
+
+.management{
+  padding: 50px 0 60px;
+}
+
+.management-1{
+  background-color: @colorBlue;
+}
+
+.management__list{
+  padding: 0;
+}
+
+.management__list-item{
+  position: relative;
+  margin-bottom: 25px;
+  //border: 1px solid red;
+  &:hover,
+  &:focus{
+    .management__item-text{
+      visibility: visible;
+      opacity: 1;
+      .scale(1);
+    }
+  }
+}
+
+.management__item-img{
+  width: 100%;
+  max-height: 182px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+
+.management__item-text{
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.3;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 81%;
+  height: 81%;
+  max-height: 95%;
+  background-color: rgba(102,102,102,0.8);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  .scale(0.5);
+  .transition(0.3s all ease);
+}
+
+.management__item-name{
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.management__item-desc{
+  font-weight: 300;
+}
+
+.management-2{
+  border-bottom: 1px solid #adadad;
+  .management__item-name{
+    margin-bottom: 0;
+  }
+  .management__item-desc{
+    font-weight: 500;
+  }
+}
+
+.management-3{
+  .section__heading{
+    color: @colorBlue;
+  }
+  .management__item-desc{
+    font-weight: 500;
+  }
+}
+
+@media  screen and (max-width: 992px) {
+  .management__item-name{
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .management__item-text{
+    font-size: 12px;
+    .square(90%);
+  }
+}
+@media  screen and (max-width: 768px) {
+  .management__list{
+    padding: 0 15px;
+  }
+}
