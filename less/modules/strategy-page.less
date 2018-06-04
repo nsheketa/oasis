@@ -1,25 +1,26 @@
-.strategy{
+.strategy-info__wrap{
   padding: 66px 0;
-}
-
-.strategy-info{
-
 }
 
 .strategy-info__section-heading{
   color: @colorBlue;
   text-align: center;
+  margin-bottom: 35px;
 }
 
 .strategy-info__item{
   height: 565px;
-  .border-radius(4px);
+}
+
+.strategy-info__item-inner{
+  border: 1px solid #d3d3d3;
+  .border-radius(7px);
 }
 
 .strategy-info__item-title{
   height: 65px;
   background-color: @colorBlue;
-  .border-radius(4px);
+  .border-radius(7px);
 }
 
 .strategy-info__title-icon{
@@ -49,9 +50,6 @@
 }
 
 .strategy-info__item-body{
-  border: 1px solid #d3d3d3;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
   height: 500px;
   padding: 30px 0;
 }
@@ -127,4 +125,301 @@
   -webkit-background-size: contain;
   background-size: contain;
   .size(211px, 56px);
+}
+
+.strategy-info__item-2 {
+  .strategy-info__item-body{
+    padding: 0;
+    height: 460px;
+  }
+}
+
+.strategy-info__item-subtitle{
+  height: 40px;
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 40px;
+}
+
+.strategy-info__subtitle-text{
+  &:first-child {
+    border-right: 1px solid #d3d3d3;
+  }
+}
+
+.strategy-info__item-col{
+  width: 51%;
+  max-width: 51%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 51%;
+  flex: 1 51%;
+  padding: 30px 0;
+  height: 100%;
+  &:first-of-type{
+    border-right: 1px solid #d3d3d3;
+    margin-right: -1px;
+  }
+}
+
+.strategy__logo-glyvcel-md{
+  background: url("@{rootUrl}strategy/glycel-md.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(190px, 43px);
+}
+
+.strategy__logo-eurobeauty{
+  background: url("@{rootUrl}strategy/eurobeauty.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(191px, 35px);
+}
+
+.strategy__logo-oasis-dermo{
+  background: url("@{rootUrl}strategy/oasis-derma.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(164px, 64px);
+}
+
+.strategy__logo-o-ko{
+  background: url("@{rootUrl}strategy/o-ko.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(190px, 62px);
+}
+
+.strategy__logo-o-pro{
+  background: url("@{rootUrl}strategy/o-pro.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(190px, 62px);
+}
+
+.strategy__logo-erno{
+  background: url("@{rootUrl}strategy/erno.jpg")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(98px, 74px);
+  margin: 25px 0;
+}
+
+.strategy__logo-h2o{
+  background: url("@{rootUrl}strategy/h2o.jpg")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(116px, 71px);
+  margin: 25px 0;
+}
+
+//strategy details
+
+.strategy-details{
+  padding-bottom: 60px;
+}
+
+.strategy-details__heading{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 80px;
+  max-width: 745px;
+}
+
+.strategy-details__list{
+  padding: 0 45px;
+}
+
+.sd-list__item{
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 91px;
+  max-width: 94%;
+}
+
+.sd-list__item-icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sd-list__item-icon-1{
+  .size(68px, 72px);
+  background: url("@{rootUrl}strategy/icon-1.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.sd-list__item-icon-2{
+  .size(66px, 65px);
+  background: url("@{rootUrl}strategy/icon-2.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.sd-list__item-icon-3{
+  .size(47px, 55px);
+  background: url("@{rootUrl}strategy/icon-3.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.sd-list__item-icon-4{
+  .size(47px, 66px);
+  background: url("@{rootUrl}strategy/icon-4.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.sd-list__item-icon-5{
+  .size(44px, 61px);
+  background: url("@{rootUrl}strategy/icon-5.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+.sd-list__item-title{
+  color: @colorBlue;
+  margin-bottom: 25px;
+}
+
+.sd-list__item-content{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+
+@media  screen and (max-width: 1200px) {
+  .strategy__logo-glyvcel-md {
+    width: 180px;
+  }
+  .strategy__logo-eurobeauty {
+    width: 180px;
+  }
+  .strategy__logo-o-ko {
+    width: 180px;
+  }
+  .strategy__logo-o-pro {
+    width: 180px;
+  }
+}
+
+@media  screen and (max-width: 992px) {
+  .strategy-info__item {
+    margin-bottom: 30px;
+  }
+  .strategy-info__item-row{
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .strategy__logo-oasis {
+    width: 218px;
+    height: 66px;
+  }
+  .strategy__logo-glycel-sm {
+    width: 175px;
+    height: 36px;
+  }
+  .strategy__logo-glyvcel-md {
+    width: 125px;
+    height: 27px;
+  }
+  .strategy__logo-eurobeauty {
+    width: 119px;
+    height: 21px;
+  }
+  .strategy__logo-oasis-dermo {
+    width: 116px;
+    height: 49px;
+  }
+  .strategy__logo-o-ko {
+    width: 118px;
+    height: 38px;
+  }
+  .strategy__logo-o-pro {
+    width: 118px;
+    height: 38px;
+  }
+  .strategy__logo-erno {
+    width: 82px;
+    height: 58px;
+    margin: 10px 0;
+  }
+  .strategy__logo-h2o {
+    width: 91px;
+    height: 50px;
+    margin: 10px 0;
+  }
+  .strategy-details__list {
+    padding: 0;
+  }
+  .sd-list__item{
+    max-width: 98%;
+    padding-left: 65px;
+  }
+  .sd-list__item-icon-1 {
+    width: 60px;
+    height: 61px;
+  }
+  .sd-list__item-icon-2 {
+    width: 60px;
+    height: 57px;
+  }
+  .sd-list__item-icon-4 {
+    width: 40px;
+    height: 61px;
+  }
+  .sd-list__item-icon-5 {
+    width: 42px;
+    height: 54px;
+  }
+
+}
+
+@media  screen and (max-width: 768px) {
+  .strategy-info__item {
+    height: 505px;
+  }
+  .strategy-info__item-body {
+    height: 440px;
+  }
+  .sd-list__item-content {
+    font-size: 12px;
+  }
+  .sd-list__item-icon-1 {
+    width: 48px;
+    height: 51px;
+  }
+  .sd-list__item-icon-2 {
+    width: 58px;
+    height: 46px;
+  }
+  .sd-list__item-icon-3 {
+    width: 52px;
+    height: 45px;
+  }
+  .sd-list__item-icon-4 {
+    width: 51px;
+    height: 44px;
+  }
+  .sd-list__item-icon-5 {
+    width: 48px;
+    height: 42px;
+  }
+  .strategy-details {
+    padding-bottom: 0px;
+  }
+}
+
+@media  screen and (max-width: 580px) {
+  .strategy-info__wrap {
+    padding: 65px 0 90px;
+  }
+  .strategy-details__heading{
+    margin-bottom: 60px;
+  }
+
 }
