@@ -24,44 +24,8 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+        <?php include(__DIR__ . '/include/header.php'); ?>
 
-        <header id="header">
-            <div class="header__inner">
-                <div class="container d-flex flex-column">
-                    <div id="header-mob__btn">
-                        <span></span><span></span><span></span>
-                    </div>
-
-                    <div class="header__lang ml-auto">
-                        <a href="#" class="header__lang-choice header__lang-choice-1">中 </a>
-                        <a href="#" class="header__lang-choice header__lang-choice-2">ENG</a>
-                    </div>
-                    <a href="index.html" class="logo"></a>
-                    <nav class="header__nav ml-auto">
-                        <ul class="header__nav-list d-flex">
-                            <li class="active header__nav-item">
-                                <a class="header__nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Business Strategy</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Group Business</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Investor Relations</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">Careers</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a class=" header__nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
         <main class="homepage__main main">
             <div class="homepage__slider slick__slider">
                 <div class="slick__item">
@@ -214,36 +178,8 @@
                 </div>
             </section>
         </main>
-        <footer id="footer">
-            <div class="container">
-                <div class="row padding-lr-80">
-                    <div class="col-12 col-md-2">
-                        <div class="section__heading section__heading--white">聯絡我們</div>
-                    </div>
-                    <div class="col-12 col-md-5 footer__address-wrap">
-                        <div class="footer__address-subheading">香港辦公室</div>
-                        <div class="footer__street"> 香港銅鑼灣告士打道280號世界貿易中心18樓 </div>
-                        <div class="footer__contact">
-                            corporate@wateroasis.com.hk <br>
-                            +852 2890 7428 <br>
-                            +852 3182 7777 (查詢熱線) <br>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5 footer__address-wrap">
-                        <div class="footer__address-subheading">北京辦公室</div>
-                        <div class="footer__street">
-                            北京市西城區宣武門外大街6號莊勝 <br>
-                            廣場北辦公樓西翼4層3A12單元(郵編: 100052)
-                        </div>
-                        <div class="footer__contact">
-                            cs@wateroasis.com.cn <br>
-                            +86 10 6528 0192
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
 
+        <?php include(__DIR__ . '/include/footer.php'); ?>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery-3.2.1.min.js"></script>
