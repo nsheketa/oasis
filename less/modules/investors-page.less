@@ -62,8 +62,8 @@
 
 .investors-accordion__head{
   position: relative;
-  background-color: @colorBlue;
-  color: #fff;
+  color: @colorBlue;
+  border: 1px solid @colorBlue;
   padding: 0px 70px 0px 35px;
   line-height: 60px;
   margin-bottom: 0;
@@ -77,11 +77,17 @@
     bottom: 0;
     margin: auto;
     display: block;
+    -webkit-box-shadow: 2px -2px @colorBlue inset;
+    box-shadow: 2px -2px 0 0  @colorBlue inset;
   }
   &.investors-accordion__head-active{
+    background-color: @colorBlue;
+    color: #fff;
     .arrow{
       -webkit-transform: rotate(315deg) scale(1.0);
       transform: rotate(315deg) scale(1.0);
+      -webkit-box-shadow: 2px -2px white inset;
+      box-shadow: 2px -2px 0 0 white inset;
     }
   }
 }
