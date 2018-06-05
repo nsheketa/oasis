@@ -157,16 +157,16 @@
                             </div>
 
                             <div class="col-12 col-md-5 section-logos">
-                                <div class="group__logo homepage-career__group-logo sprite sprite-oasis-sm"></div>
+                                <div class="group__logo homepage-career__group-logo"></div>
                                 <div class="homepage-career__separator"></div>
-                                <div class="section-logos__oasis d-flex justify-content-between">
+                                <div class="section-logos__oasis d-flex justify-content-between align-items-center">
                                     <div class="section__logo-small homme__logo"></div>
                                     <div class="section__logo-small medical__logo"></div>
                                     <div class="section__logo-small spa__logo"></div>
                                     <div class="section__logo-small beauty__logo"></div>
                                     <div class="section__logo-small florist__logo"></div>
                                 </div>
-                                <div class="section-logos__small d-flex justify-content-between">
+                                <div class="section-logos__small d-flex justify-content-between align-items-center">
                                     <div class="section__logo-small h2o__logo"></div>
                                     <div class="section__logo-small glycel__logo"></div>
                                     <div class="section__logo-small erno__logo"></div>

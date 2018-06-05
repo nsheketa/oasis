@@ -1,0 +1,187 @@
+.career-info{
+  padding: 44px 0 66px;
+}
+
+.career-info__content-wrap{
+  max-width: 485px;
+  line-height: 1.5;
+}
+
+.career-info__contact-alert{
+  font-size: 10px;
+  font-weight: 300;
+}
+
+//career logos
+
+.career-logos{
+  padding-bottom: 60px;
+}
+
+.career-logo__section-heading{
+  color: @colorBlue;
+  padding-top: 15px;
+  &:before{
+    display: block;
+    content: '';
+    background-color: #adadad;
+    .size(100%, 2px);
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+  }
+}
+
+.career-logos__wrap{
+  border-top: 1px solid #adadad;
+  padding: 15px 0;
+}
+
+.career-logos-subtitle{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.career__group-logo{
+  background: url("@{rootUrl}general-icons/oasis-sm.png")no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .size(129px, 86px);
+}
+
+.career-logos__oasis{
+  margin-bottom: 50px;
+  .homme__logo{
+    .size(108px, 46px);
+  }
+
+  .medical__logo{
+    .size(123px, 43px);
+  }
+
+  .spa__logo{
+    .size(93px, 54px);
+  }
+
+  .beauty__logo{
+    .size(102px, 54px);
+  }
+
+  .florist__logo{
+    .size(119px, 56px);
+  }
+}
+
+.career-logos__small{
+  .h2o__logo{
+    .size(82px, 48px);
+  }
+  .glycel__logo{
+    .size(119px, 36px);
+  }
+  .erno__logo{
+    .size(75px, 59px);
+  }
+  .eurobeauty__logo{
+    .size(181px, 48px);
+  }
+}
+
+@media  screen and (max-width: 1200px) {
+  .career__group-logo {
+    width: 119px;
+    height: 80px;
+  }
+}
+
+@media  screen and (max-width: 992px) {
+  .career-info__contact-item{
+    font-size: 12px;
+  }
+  .career-info__content-wrap{
+    margin-bottom: 40px;
+  }
+
+  .career__group-logo {
+    width: 87px;
+    height: 56px;
+  }
+  .career-logos__oasis{
+    margin-bottom: 50px;
+    .homme__logo{
+      .size(86px, 36px);
+    }
+
+    .medical__logo{
+      .size(98px, 34px);
+    }
+
+    .spa__logo{
+      .size(74px, 43px);
+    }
+
+    .beauty__logo{
+      .size(81px, 43px);
+    }
+
+    .florist__logo{
+      .size(95px, 44px);
+    }
+  }
+
+  .career-logos__small{
+    .h2o__logo{
+      .size(65px, 38px);
+    }
+    .glycel__logo{
+      .size(95px, 28px);
+    }
+    .erno__logo{
+      .size(60px, 47px);
+    }
+    .eurobeauty__logo{
+      .size(144px, 38px);
+    }
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .career-logo__section-heading{
+    margin-bottom: 25px;
+  }
+  .career-logos__wrap{
+    border-top: none;
+  }
+}
+@media  screen and (max-width: 580px) {
+  .career-logos__oasis {
+    margin-bottom: 25px;
+  }
+}
+
+@media  screen and (max-width: 480px) {
+  .career__group-logo {
+    width: 70px;
+    height: 41px;
+  }
+  .career-logos__oasis {
+    margin-bottom: 5px;
+  }
+  .career-logos__small{
+    .h2o__logo{
+      .size(52px, 28px);
+    }
+    .glycel__logo{
+      .size(76px, 24px);
+    }
+    .erno__logo{
+      .size(47px, 37px);
+    }
+    .eurobeauty__logo{
+      .size(127px, 32px);
+    }
+  }
+}
