@@ -1263,7 +1263,8 @@ h4,
   margin-bottom: 25px;
 }
 .management__list-item:hover .management__item-text,
-.management__list-item:focus .management__item-text {
+.management__list-item:focus .management__item-text,
+.management__list-item:active .management__item-text {
   visibility: visible;
   opacity: 1;
   -webkit-transform: scale(1);
