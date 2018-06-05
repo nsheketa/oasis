@@ -30,5 +30,12 @@ $(document).ready(function () {
         variableWidth: true
     });
 
+    //accordion
+
+    $('.investors-accordion__head').click(function () {
+        $('.investors-accordion__head').not(this).removeClass('investors-accordion__head-active').next().slideUp(300);
+        $(this).addClass('investors-accordion__head-active').next().slideDown(300);
+    });
+
 
 });

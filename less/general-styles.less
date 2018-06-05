@@ -48,6 +48,31 @@ body{
   }
 }
 
+.arrow{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding: 15px; /* Arrow size */
+  margin: auto 0;
+  border: solid transparent;
+  border-width: 0 0 1rem 1rem;
+  box-shadow: 1px -1px 0 1px white inset;
+  -webkit-box-shadow: 2px -2px white inset;
+  -webkit-transition: all 0.25s ease-in-out 0s;
+  transition: all 0.25s ease-in-out 0s;
+  z-index: 50;
+  top: 0;
+  bottom: 0;
+  -webkit-transform: rotate(225deg) scale(0.8);
+  transform: rotate(225deg) scale(0.8);
+  &:hover,
+  &:focus,
+  &:active{
+    -webkit-transform: rotate(225deg) scale(1.0);
+    transform: rotate(225deg) scale(1.0);
+  }
+}
+
 @media screen and (min-width: 1300px) {
   .container {
     max-width: 1280px !important;
