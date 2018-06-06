@@ -1,0 +1,48 @@
+//general rules
+
+.slick__slider{
+  //margin: 0 -15px;
+  .slick-dots {
+    bottom: -40px;
+    li{
+      &.slick-active{
+        button{
+          background-color: @colorBlue;
+        }
+      }
+    }
+    button {
+      background-color: #949494;
+      .square(15px);
+      .border-radius(50%);
+      .transition(0.3s all ease);
+      &:before{
+        display: none;
+      }
+    }
+  }
+}
+
+.slick__item{
+  outline: none;
+  .transition(0.3s all ease);
+  font-family: @baseFontFamily !important;
+  margin-bottom: 20px;
+}
+
+
+//Homepage Slider
+
+.homepage__slider {
+  margin-bottom: 100px !important;
+  img {
+    width: 100%;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .homepage__slider {
+    margin-bottom: 70px !important;
+  }
+}
+

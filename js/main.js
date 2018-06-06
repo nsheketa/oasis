@@ -30,6 +30,33 @@ $(document).ready(function () {
         variableWidth: true
     });
 
+    $('.brands__slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.brands__slider-nav'
+    });
+    $('.brands__slider-nav').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        // infinite: true,
+        asNavFor: '.brands__slider-for',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true
+    });
+
+    // $('.brands__slider-nav .slick-slide').removeClass('slick-active');
+    //
+    // $('.brands__slider-nav .slick-slide').eq(0).addClass('slick-active');
+    //
+    // $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    //     var mySlideNumber = nextSlide;
+    //     $('.brands__slider-nav .slick-slide').removeClass('slick-active');
+    //     $('.brands__slider-nav .slick-slide').eq(mySlideNumber).addClass('slick-active');
+    // });
+
     //accordion
 
     $('.investors-accordion__head').click(function () {

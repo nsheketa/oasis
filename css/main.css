@@ -278,12 +278,44 @@ h1,
   letter-spacing: 1px;
   font-weight: 700;
 }
-h2,
-.h2 {
+.h1__subtitle {
   font-size: 15px;
   letter-spacing: 1px;
   font-weight: 700;
   line-height: 1.4;
+}
+h2,
+.h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  position: relative;
+}
+h2:before,
+.h2:before {
+  display: block;
+  content: '';
+  width: 72px;
+  height: 2px;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+}
+h2.section__heading--blue,
+.h2.section__heading--blue {
+  color: #000;
+}
+h2.section__heading--blue:before,
+.h2.section__heading--blue:before {
+  background-color: #0090d2;
+}
+h2.section__heading--white,
+.h2.section__heading--white {
+  color: #fff;
+}
+h2.section__heading--white:before,
+.h2.section__heading--white:before {
+  background-color: #fff;
 }
 h3,
 .h3 {
@@ -294,33 +326,6 @@ h4,
 .h4 {
   font-size: 14px;
   font-weight: 500;
-}
-.section__heading {
-  font-size: 24px;
-  margin-bottom: 25px;
-  font-weight: 500;
-  position: relative;
-}
-.section__heading:before {
-  display: block;
-  content: '';
-  width: 72px;
-  height: 2px;
-  position: absolute;
-  top: -15px;
-  left: 0px;
-}
-.section__heading.section__heading--blue {
-  color: #000;
-}
-.section__heading.section__heading--blue:before {
-  background-color: #0090d2;
-}
-.section__heading.section__heading--white {
-  color: #fff;
-}
-.section__heading.section__heading--white:before {
-  background-color: #fff;
 }
 .section__content {
   font-size: 14px;
@@ -366,10 +371,10 @@ h4,
   .h4 {
     font-size: 13px;
   }
-  .section__heading {
+  .h2 {
     font-size: 18px;
   }
-  .section__heading:before {
+  .h2:before {
     width: 57px;
   }
   .section__content,
@@ -658,6 +663,9 @@ h4,
   -webkit-transform: rotate(225deg) scale(1);
   transform: rotate(225deg) scale(1);
 }
+.slick-slide {
+  outline: none ;
+}
 .slick__item {
   outline: none;
   -webkit-transition: 0.3s all ease;
@@ -695,6 +703,20 @@ h4,
 .corporate__slider-content {
   font-weight: 300;
   font-size: 18px;
+}
+.brands__slider-for {
+  margin-bottom: 22px;
+}
+.brands__slider-nav .slick-list {
+  padding: 0 !important;
+}
+.brands__slider-nav .slick-track {
+  margin-left: 0 !important;
+}
+.brands__slider-nav-item {
+  width: 84px !important;
+  height: 84px !important;
+  margin-right: 10px;
 }
 @media screen and (max-width: 992px) {
   .corporate__slider .slick__item {
@@ -1211,7 +1233,7 @@ h4,
 .about-us__content {
   margin-bottom: 40px;
 }
-.about-us__content .section__heading {
+.about-us__content .h2 {
   margin-bottom: 40px;
 }
 .about-us__img-wrap {
@@ -1358,7 +1380,7 @@ h4,
 .management-2 .management__item-desc {
   font-weight: 500;
 }
-.management-3 .section__heading {
+.management-3 .h2 {
   color: #0090d2;
 }
 .management-3 .management__item-desc {
@@ -2167,6 +2189,82 @@ h4,
   .career-logos__small .eurobeauty__logo {
     width: 127px;
     height: 32px;
+  }
+}
+.brands__main-inner {
+  padding-top: 35px;
+}
+.brands__heading {
+  color: #0090d2;
+  margin-bottom: 16px;
+}
+.brands-submnenu__list {
+  border-top: 1px solid #adadad;
+  border-bottom: 1px solid #adadad;
+  padding: 13px 0px;
+  width: 100%;
+}
+.brands-submenu__list-item {
+  list-style: none;
+}
+.brands-submenu__list-item:hover .brands-submenu__list-link,
+.brands-submenu__list-item:focus .brands-submenu__list-link,
+.brands-submenu__list-item:active .brands-submenu__list-link,
+.brands-submenu__list-item.brands-submenu__list-item-active .brands-submenu__list-link {
+  color: #0090d2;
+}
+.brands-submenu__list-link {
+  font-size: 15px;
+  color: #000;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  text-decoration: none;
+}
+.brands-submenu__list-link:hover,
+.brands-submenu__list-link:focus,
+.brands-submenu__list-link:active {
+  text-decoration: none;
+  color: #0090d2;
+}
+.brands-info {
+  padding: 60px 0;
+}
+.brands-info__content {
+  max-width: 97%;
+}
+.brands-info__content-logo {
+  margin-bottom: 60px;
+}
+.brands-info__content-logo.medical__logo {
+  width: 192px;
+  height: 68px;
+}
+.brands-info__content-email {
+  font-size: 14px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1200px) {
+  .brands-submnenu__list {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .brands-submenu__list-item {
+    margin: 0 10px 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .brands-info {
+    padding: 0 0 30px;
+  }
+  .brands-info__content-logo {
+    margin-bottom: 30px;
+  }
+  .brands-info__content {
+    margin-bottom: 35px;
+  }
+  .brands-submenu__list-link {
+    font-size: 12px;
   }
 }
 #footer {

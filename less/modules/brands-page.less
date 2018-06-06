@@ -1,0 +1,90 @@
+.brands__main{
+
+}
+
+.brands__main-inner{
+  padding-top: 35px;
+}
+
+.brands__heading{
+  color: @colorBlue;
+  margin-bottom: 16px;
+}
+
+.brands-submnenu__list{
+  border-top: 1px solid #adadad;
+  border-bottom: 1px solid #adadad;
+  padding: 13px 0px;
+  width: 100%;
+}
+
+.brands-submenu__list-item{
+  list-style: none;
+  &:hover,
+  &:focus,
+  &:active,
+  &.brands-submenu__list-item-active{
+    .brands-submenu__list-link{
+      color: @colorBlue;
+    }
+  }
+}
+
+.brands-submenu__list-link{
+  font-size: 15px;
+  color: @textColor;
+  .transition(0.3s all ease);
+  text-decoration: none;
+  &:hover,
+  &:focus,
+  &:active{
+    text-decoration: none;
+    color: @colorBlue;
+  }
+}
+
+.brands-info{
+  padding: 60px 0;
+}
+
+.brands-info__content{
+  max-width: 97%;
+}
+
+.brands-info__content-logo{
+margin-bottom: 60px;
+  &.medical__logo{
+    .size(192px, 68px);
+  }
+}
+
+.brands-info__content-email{
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media  screen and (max-width: 1200px) {
+  .brands-submnenu__list{
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+  }
+  .brands-submenu__list-item {
+    margin: 0 10px 13px;
+  }
+}
+
+@media  screen and (max-width: 768px) {
+  .brands-info {
+    padding: 0 0 30px;
+  }
+  .brands-info__content-logo {
+    margin-bottom: 30px;
+  }
+  .brands-info__content{
+    margin-bottom: 35px;
+  }
+  .brands-submenu__list-link{
+    font-size: 12px;
+  }
+
+}
